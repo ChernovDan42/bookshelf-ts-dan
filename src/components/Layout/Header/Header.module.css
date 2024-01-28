@@ -1,0 +1,27 @@
+
+
+.header{
+width: 100vh;
+padding: 18px 20px;
+border-radius: 0px 0px 8px 8px;
+margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 19px 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 19px 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+   
+    padding: 19px 24px;
+  }
+}

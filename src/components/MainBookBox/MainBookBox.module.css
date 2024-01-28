@@ -1,0 +1,63 @@
+.thumb{
+    width: 335px;
+   margin-bottom: 6px;
+  
+}
+
+@media screen and (min-width:768px) {
+    .thumb{
+    width: 150px;
+    
+}
+}
+
+@media screen and (min-width:1280px) {
+    .thumb{
+    width: 180px;
+    
+}
+}
+
+.bookImage{
+    width: 335px;
+    height: 485px;
+     border-radius: 8px;
+}
+
+@media screen and (min-width:768px) {
+   .bookImage{
+    width: 150px;
+    height: 256px;
+}
+}
+
+@media screen and (min-width:1280px) {
+   .bookImage{
+    width: 180px;
+    height: 256px;
+}
+}
+
+.bookItem{
+flex-direction: column;
+ width: 335px;
+
+}
+
+@media screen and (min-width:768px) {
+  .bookItem{
+    width: 150px;
+}
+}
+
+@media screen and (min-width:1280px) {
+  .bookItem{
+    width: 190px;
+}
+}
+
+@media screen and (min-width:1440px) {
+  .bookItem{
+    width: 180px;
+}
+}

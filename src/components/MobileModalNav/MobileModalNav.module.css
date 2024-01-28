@@ -1,0 +1,16 @@
+.overlay{
+     background-image:radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+  transform: translateX(100%);
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.isOpen{
+transform: translateX(0);
+}

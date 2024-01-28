@@ -1,0 +1,35 @@
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 104px 20px 50px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width:none;
+    width: 768px;
+    padding: 104px 16px 50px 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+   width: 1270px;
+    padding: 104px 24px 50px 24px;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    padding:104px 24px 50px 24px;
+  }
+}
+
+
+.mainFlex{
+  display: flex;
+  flex-direction: row;
+ gap: 16px;
+}

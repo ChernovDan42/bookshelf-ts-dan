@@ -1,0 +1,41 @@
+.modalBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400;
+  border: 2px solid #111;
+  border-radius: 18px;
+  padding:40px 22px;
+  
+  
+  width: 335px;
+  height: auto
+};
+
+
+
+.thumba{
+    width: 287px;
+   height: 408px;
+ background-color: red;
+}
+
+@media screen and (min-width:768px) {
+    .thumba{
+    width: 150px;
+    
+}
+}
+
+@media screen and (min-width:1280px) {
+    .thumba{
+    width: 180px;
+    height: 408px;
+    
+}
+}
+
+.bookImg{
+    width: 100%;
+}

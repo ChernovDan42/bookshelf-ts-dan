@@ -1,0 +1,17 @@
+@media screen and (min-width:768px){
+    .css-pvjouj-MuiPaper-root-MuiAppBar-root{
+        width: 768px;
+    }
+}
+
+@media screen and (min-width:1280px){
+    .css-pvjouj-MuiPaper-root-MuiAppBar-root{
+        width: 1280px;
+    }
+}
+
+@media screen and (min-width:1440px){
+    .css-pvjouj-MuiPaper-root-MuiAppBar-root{
+        width: 1440px;
+    }
+}
