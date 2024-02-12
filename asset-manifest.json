@@ -1,16 +1,36 @@
 {
   "files": {
-    "main.css": "/bookshelf-ts-dan/static/css/main.b5dda8c0.css",
-    "main.js": "/bookshelf-ts-dan/static/js/main.2a421afc.js",
+    "main.css": "/bookshelf-ts-dan/static/css/main.63b69ffb.css",
+    "main.js": "/bookshelf-ts-dan/static/js/main.71b48100.js",
+    "static/css/551.f22134db.chunk.css": "/bookshelf-ts-dan/static/css/551.f22134db.chunk.css",
+    "static/js/551.adb150a0.chunk.js": "/bookshelf-ts-dan/static/js/551.adb150a0.chunk.js",
+    "static/css/67.5d36c83d.chunk.css": "/bookshelf-ts-dan/static/css/67.5d36c83d.chunk.css",
+    "static/js/67.6c8be21f.chunk.js": "/bookshelf-ts-dan/static/js/67.6c8be21f.chunk.js",
+    "static/css/225.eaf51545.chunk.css": "/bookshelf-ts-dan/static/css/225.eaf51545.chunk.css",
+    "static/js/225.11a3860f.chunk.js": "/bookshelf-ts-dan/static/js/225.11a3860f.chunk.js",
     "static/js/787.a9dea1e7.chunk.js": "/bookshelf-ts-dan/static/js/787.a9dea1e7.chunk.js",
+    "static/js/120.6fd4a4b5.chunk.js": "/bookshelf-ts-dan/static/js/120.6fd4a4b5.chunk.js",
+    "static/js/591.22ae0fb9.chunk.js": "/bookshelf-ts-dan/static/js/591.22ae0fb9.chunk.js",
+    "static/js/129.f35f0c5d.chunk.js": "/bookshelf-ts-dan/static/js/129.f35f0c5d.chunk.js",
     "static/media/modalBgImg.png": "/bookshelf-ts-dan/static/media/modalBgImg.1f9c2a04db3de13886f4.png",
+    "static/media/emptyList@2x.png": "/bookshelf-ts-dan/static/media/emptyList@2x.500a2c5bad8a8d9c9e42.png",
+    "static/media/emptyList.png": "/bookshelf-ts-dan/static/media/emptyList.86aabef6721c92668d44.png",
     "index.html": "/bookshelf-ts-dan/index.html",
-    "main.b5dda8c0.css.map": "/bookshelf-ts-dan/static/css/main.b5dda8c0.css.map",
-    "main.2a421afc.js.map": "/bookshelf-ts-dan/static/js/main.2a421afc.js.map",
-    "787.a9dea1e7.chunk.js.map": "/bookshelf-ts-dan/static/js/787.a9dea1e7.chunk.js.map"
+    "main.63b69ffb.css.map": "/bookshelf-ts-dan/static/css/main.63b69ffb.css.map",
+    "main.71b48100.js.map": "/bookshelf-ts-dan/static/js/main.71b48100.js.map",
+    "551.f22134db.chunk.css.map": "/bookshelf-ts-dan/static/css/551.f22134db.chunk.css.map",
+    "551.adb150a0.chunk.js.map": "/bookshelf-ts-dan/static/js/551.adb150a0.chunk.js.map",
+    "67.5d36c83d.chunk.css.map": "/bookshelf-ts-dan/static/css/67.5d36c83d.chunk.css.map",
+    "67.6c8be21f.chunk.js.map": "/bookshelf-ts-dan/static/js/67.6c8be21f.chunk.js.map",
+    "225.eaf51545.chunk.css.map": "/bookshelf-ts-dan/static/css/225.eaf51545.chunk.css.map",
+    "225.11a3860f.chunk.js.map": "/bookshelf-ts-dan/static/js/225.11a3860f.chunk.js.map",
+    "787.a9dea1e7.chunk.js.map": "/bookshelf-ts-dan/static/js/787.a9dea1e7.chunk.js.map",
+    "120.6fd4a4b5.chunk.js.map": "/bookshelf-ts-dan/static/js/120.6fd4a4b5.chunk.js.map",
+    "591.22ae0fb9.chunk.js.map": "/bookshelf-ts-dan/static/js/591.22ae0fb9.chunk.js.map",
+    "129.f35f0c5d.chunk.js.map": "/bookshelf-ts-dan/static/js/129.f35f0c5d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5dda8c0.css",
-    "static/js/main.2a421afc.js"
+    "static/css/main.63b69ffb.css",
+    "static/js/main.71b48100.js"
   ]
 }
