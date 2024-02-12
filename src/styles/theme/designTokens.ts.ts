@@ -2,6 +2,7 @@ import { PaletteMode } from '@mui/material';
 
 
 const getDesignTokens = (mode: PaletteMode) => ({
+
   typography: {
     fontFamily: [
       'DM-Sans',
@@ -39,7 +40,7 @@ const getDesignTokens = (mode: PaletteMode) => ({
       styleOverrides: {
         root: {
           padding: 0,
-          width:'auto'
+          width:'inherit',
         },
       },
     },

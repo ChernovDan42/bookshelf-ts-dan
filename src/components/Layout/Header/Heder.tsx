@@ -27,11 +27,6 @@ const Header = () => {
       <Box
         className={style.header}
         sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          left: 0,
           width,
         }}
       >

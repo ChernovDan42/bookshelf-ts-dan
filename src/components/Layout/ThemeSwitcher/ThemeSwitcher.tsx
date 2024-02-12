@@ -1,4 +1,4 @@
-import { styled } from '@mui/material';
+import { styled, useTheme } from '@mui/material';
 import { useContext } from 'react';
 import ColorModeContext from 'styles/theme/ColorModeContext';
 
@@ -59,5 +59,12 @@ export const SwitchTextTrack = styled(Switch)({
 
 export const ThemeSwitcher = () => {
   const colorMode = useContext(ColorModeContext);
-  return <SwitchTextTrack onClick={colorMode.toggleColorMode} />;
+  const theme = useTheme();
+  return (
+    <SwitchTextTrack
+      onClick={colorMode.toggleColorMode}
+      aria-label="Switch theme mode"
+      checked={theme.palette.mode === 'light' ? false : true}
+    />
+  );
 };

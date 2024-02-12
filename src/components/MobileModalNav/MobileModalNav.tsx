@@ -8,14 +8,14 @@ import style from './MobileModalNav.module.css';
 
 const imageStyle = {
   backgroundImage: `url(${bgImage})`,
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+  backgroundColor: 'transparent',
   width: '100%',
   height: '350px',
   position: 'absolute',
   zIndex: '2',
   bottom: -70,
-  backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  backgroundColor: 'transparent',
 };
 
 type Props = {
@@ -34,12 +34,12 @@ export const MobileModalNav = ({ isOpen, toggle }: Props) => {
           paddingTop: '247px',
         }}
       >
-        <List sx={{ padding: 0 }}>
-          <ListItem onClick={toggle} sx={{ width: 'auto', padding: 0 }}>
+        <List>
+          <ListItem onClick={toggle}>
             <CustomLink page={Pages.HomePage}>Home</CustomLink>
           </ListItem>
 
-          <ListItem onClick={toggle} sx={{ width: 'auto', padding: 0 }}>
+          <ListItem onClick={toggle}>
             <CustomLink page={Pages.ShoppingListPage}>Shopping Page</CustomLink>
           </ListItem>
         </List>

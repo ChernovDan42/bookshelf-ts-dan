@@ -1,0 +1,23 @@
+.shoppingBooksListContainer{
+    height: 776px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .shoppingBooksListContainer{
+    height: 680px;
+    margin-bottom: 40px;
+}
+}
+
+
+
+.shoppingListWrap{
+    min-height:calc(100vh - 218px - 74px)
+}
+
+@media screen and (min-width:768px) {
+ .shoppingListWrap{
+    min-height:calc(100vh - 218px - 74px)
+}
+}

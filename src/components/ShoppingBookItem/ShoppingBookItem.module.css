@@ -1,0 +1,30 @@
+
+.thumb{
+   min-width: 100px;
+   max-width: 100px;
+    height: 142px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 14px;
+}
+
+@media screen and (min-width: 768px){
+.thumb { 
+   min-width: 116px;
+height: 165px;
+ margin-bottom: 14px;
+}
+}
+
+@media screen and (min-width: 768px){
+.authorAndLinksWrap{
+
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+}
+}
+
+.motion:not(:last-child){
+margin-bottom: 20px;
+}

@@ -5,12 +5,12 @@ import { List, ListItem } from '@mui/material';
 
 export const Navigation = () => {
   return (
-    <List sx={{ display: 'flex', padding: 0 }}>
-      <ListItem sx={{ width: 'auto', padding: 0 }}>
+    <List sx={{ display: 'flex' }}>
+      <ListItem sx={{ width: 'auto' }}>
         <CustomLink page={Pages.HomePage}>Home</CustomLink>
       </ListItem>
 
-      <ListItem sx={{ width: 'auto', padding: 0 }}>
+      <ListItem sx={{ width: 'auto' }}>
         <CustomLink page={Pages.ShoppingListPage}>Shopping Page</CustomLink>
       </ListItem>
     </List>

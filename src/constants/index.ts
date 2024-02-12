@@ -3,3 +3,5 @@ export const enum Pages {
     ShoppingListPage='/shopping-list'
 }
 
+export const noBookDescription = 'Unfortunately, not all books from this API have a description. This book, for example, does not.'
+

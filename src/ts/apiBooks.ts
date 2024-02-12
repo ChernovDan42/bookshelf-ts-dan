@@ -1,11 +1,7 @@
 
 import axios from 'axios';
 
-
 axios.defaults.baseURL = 'https://books-backend.p.goit.global/books'
-
-
-
 
 export const getCategories = async() => {
     try {
@@ -18,16 +14,10 @@ export const getCategories = async() => {
 }
 
 
-
-
-
-
 export const getCategoryBooks = async(category:string|undefined) => {
     try {
         const data = await axios.get(`/category?category=${category}`)
-        console.log(data)
         return data
-    
     } catch (error) {
         console.log(error)
     }

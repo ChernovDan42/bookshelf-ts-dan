@@ -1,4 +1,5 @@
 import { useMediaQuery, useTheme } from '@mui/material';
+import { Bounce, ToastContainer } from 'react-toastify';
 import clsx from 'clsx';
 import { Aside } from 'components/Aside/Aside';
 import { Donate } from 'components/Footer/Donate/Donate';
@@ -8,6 +9,8 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header/Heder';
 
 import { MobileHeader } from './MobileHeader/MobileHeader';
+import { Loader } from 'components/Loader/Loader';
+import { ScrollToTopBtn } from 'components/ScrollToTopBtn/ScrollToTopBtn';
 
 //
 
@@ -17,9 +20,9 @@ const Layout = () => {
   const location = useLocation();
   const currentUrl = location.pathname;
 
-
   const isMdScreen = useMediaQuery(theme.breakpoints.up('md'));
   const body = document.querySelector('body');
+
   useEffect(() => {
     if (isMobileNavOpen) {
       body?.classList.add('stop-scroll');
@@ -43,18 +46,33 @@ const Layout = () => {
         />
       )}
 
-      <Suspense fallback={<div>Loading...</div>}>
-        <div className={clsx('container', isMdScreen && 'mainFlex')}>
-          {currentUrl !== '/shopping-list' && <Aside />}
-          <main>
+      <div className={clsx('container', isMdScreen && 'mainFlex')}>
+        {currentUrl !== '/shopping-list' && <Aside />}
+        <main>
+          <Suspense fallback={<Loader />}>
             <Outlet />
-          </main>
-        </div>
-        <footer>
-          <Donate />
-        </footer>
-      </Suspense>
+          </Suspense>
+        </main>
+      </div>
+      <footer>
+        <Donate />
+      </footer>
+      <ToastContainer
+        position="top-right"
+        autoClose={3500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme={theme.palette.mode === 'light' ? 'light' : 'dark'}
+        transition={Bounce}
+      />
+
       <MobileModalNav isOpen={isMobileNavOpen} toggle={toggleMobileNav} />
+      <ScrollToTopBtn />
     </>
   );
 };

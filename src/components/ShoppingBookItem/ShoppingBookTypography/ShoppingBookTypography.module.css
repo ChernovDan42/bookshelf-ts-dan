@@ -1,0 +1,43 @@
+
+.titleWrap{
+    width: 144px;
+     overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 4px;
+}
+
+.categoryWrap{
+     width: 144px;
+     overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 4px;
+}
+
+.descriptionWrap {
+    width: 193px;
+    height: 55px;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+@media screen and (min-width:768px) {
+    .titleWrap{
+    width: auto;
+     overflow:unset;
+      white-space:normal;
+      margin-bottom: 4px;
+}
+.descriptionWrap {
+    width:auto;
+    height: auto;
+    overflow: unset;
+    margin-bottom: 42px;
+}
+
+.categoryWrap{
+     width: auto;
+     overflow: hidden;
+      white-space: unset;
+      margin-bottom: 14px;
+}
+}

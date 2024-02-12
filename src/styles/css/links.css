@@ -3,7 +3,8 @@ a.active{
   border-radius: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  transition: background 0.3s ease-in-out,color 0.5s ease-in-out  
+  transition: background 0.3s ease-in-out,color 0.5s ease-in-out ,transform 0.3s ease-in-out ;
+
 }
 
 a.active.category-link-dark{

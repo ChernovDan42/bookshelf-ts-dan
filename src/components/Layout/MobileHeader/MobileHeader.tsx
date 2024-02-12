@@ -52,6 +52,7 @@ export const MobileHeader = ({ toggle, isMobileNavOpen }: Props) => {
             }}
             onClick={toggle}
             className={clsx(isMobileNavOpen && style.isOpen)}
+            aria-label="Open mobile site navigation"
           />
         </Box>
       </Box>

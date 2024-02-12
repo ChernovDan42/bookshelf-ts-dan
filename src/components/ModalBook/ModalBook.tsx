@@ -1,19 +1,11 @@
-import { Backdrop, Box, Fade, Modal } from '@mui/material';
+import { Backdrop, Box, Fade, Modal, useTheme } from '@mui/material';
 import { Book } from 'Types';
+import { ToggleBookBtn } from './AddOrRemoveBookButton/ToggleBookBtn';
+import { BookBuyLinks } from '../BookBuyLinks/BookBuyLinks';
+import CloseIcon from '@mui/icons-material/Close';
 
 import style from './ModalBook.module.css';
-
-// const style = {
-//   position: 'absolute' as 'absolute',
-//   top: '50%',
-//   left: '50%',
-//   transform: 'translate(-50%, -50%)',
-//   width: 400,
-//   bgcolor: 'background.paper',
-//   border: '2px solid #000',
-//   boxShadow: 24,
-//   p: 4,
-// };
+import { TypographyBlock } from './TypographyBlock/TypographyBlock';
 
 type Props = {
   handleClose: () => void;
@@ -22,6 +14,7 @@ type Props = {
 };
 
 export const ModalBook = ({ isOpenModal, handleClose, book }: Props) => {
+  const theme = useTheme();
   return (
     <div>
       <Modal
@@ -40,15 +33,42 @@ export const ModalBook = ({ isOpenModal, handleClose, book }: Props) => {
         <Fade in={isOpenModal}>
           <Box
             className={style.modalBox}
-            sx={{ bgcolor: 'background.paper', outline: 0 }}
+            sx={{
+              bgcolor: 'background.paper',
+              outline: 0,
+              border:
+                theme.palette.mode === 'light'
+                  ? '2px solid #111'
+                  : '2px solid #FFF',
+              width: '332px',
+              padding: '40px 22px',
+              '@media screen and (min-width:768px)': {
+                width: '579px',
+                padding: '40px',
+              },
+            }}
           >
-            <Box className={style.thumba}>
-              <img
-                src={book.book_image}
-                alt="book image"
-                className={style.bookImg}
-              />
+            <CloseIcon
+              className={style.closeBtn}
+              onClick={handleClose}
+              sx={{
+                transition: 'transform 0.2s ease-in-out',
+                '&:hover': {
+                  transform: 'scale(1.3)',
+                },
+              }}
+              aria-label="Close book info button"
+            />
+            <Box className={style.flexBox}>
+              <Box className={style.thumb}>
+                <img src={book.book_image} alt="book label" loading="lazy" />
+              </Box>
+              <Box className={style.bookInfoBox}>
+                <TypographyBlock book={book} />
+                <BookBuyLinks book={book} />
+              </Box>
             </Box>
+            <ToggleBookBtn book={book} />
           </Box>
         </Fade>
       </Modal>

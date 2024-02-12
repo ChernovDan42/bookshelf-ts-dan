@@ -2,6 +2,8 @@ import { Link, ListItem, useMediaQuery, useTheme } from '@mui/material';
 import clsx from 'clsx';
 import { NavLink } from 'react-router-dom';
 
+import { scrollToTop } from 'ts/scrollToTop';
+
 type Props = {
   page: string;
   children: string;
@@ -33,6 +35,7 @@ export const AsideLink = ({ page, children }: Props) => {
             : 'category-link-dark'
         )}
         underline="none"
+        onClick={scrollToTop}
       >
         {children}
       </Link>

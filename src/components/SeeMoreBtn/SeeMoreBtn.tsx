@@ -17,6 +17,7 @@ export const SeeMoreBtn = ({ page }: Prop) => {
       sx={{ marginLeft: 'auto', color: 'text.primary' }}
       onClick={scrollToTop}
       underline="none"
+      aria-label={page}
     >
       <Typography variant="button">See more</Typography>
     </MuiLink>

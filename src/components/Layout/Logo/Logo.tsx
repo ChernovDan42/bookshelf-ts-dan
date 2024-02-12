@@ -100,11 +100,21 @@ export const Logo = () => {
 
   return (
     <Box sx={{ display: 'flex', alignItems: 'center', mr: '40px' }}>
-      <Link component={RouterLink} to={'/'} sx={{ marginRight: '8px' }}>
+      <Link
+        component={RouterLink}
+        to={'/'}
+        sx={{ marginRight: '8px' }}
+        aria-label="To home page"
+      >
         <LogoSvg />
       </Link>
 
-      <Link component={RouterLink} to={'/'} color={fill}>
+      <Link
+        component={RouterLink}
+        to={'/'}
+        color={fill}
+        aria-label="To home page"
+      >
         <BookshelfIcon theme={fill} />
       </Link>
     </Box>

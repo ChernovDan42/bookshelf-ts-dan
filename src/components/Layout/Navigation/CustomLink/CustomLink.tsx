@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { Pages } from 'constants/index';
 import { Link } from '@mui/material';
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
+import { scrollToTop } from 'ts/scrollToTop';
 
 type Props = {
   children: string;
@@ -31,6 +32,7 @@ export const CustomLink = ({ children, page }: Props) => {
       color={'text.primary'}
       sx={linkSX}
       underline="none"
+      onClick={scrollToTop}
     >
       {children}
       {page === Pages.ShoppingListPage && (

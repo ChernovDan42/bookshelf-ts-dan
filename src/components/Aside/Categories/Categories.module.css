@@ -3,6 +3,11 @@
     height: 228px;
     overflow: auto;
     max-width: 335px;
+
+     position: sticky;
+    top: 104px;
+    
+    transition: bottom 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 768px){

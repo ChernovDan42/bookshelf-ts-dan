@@ -4,3 +4,10 @@ export function scrollToTop() {
     
   });
 }
+
+export function smoothScrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
+}

@@ -8,11 +8,18 @@ type Props = {
 };
 
 export default function ToggleColorMode({ children }: Props) {
-  const [mode, setMode] = useState<'light' | 'dark'>('light');
+  const [mode, setMode] = useState<'light' | 'dark'>(
+    () => (localStorage.getItem('theme') as 'light' | 'dark') || 'light'
+  );
+
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode(prevMode => (prevMode === 'light' ? 'dark' : 'light'));
+        setMode(prevMode => {
+          const lastMode = prevMode === 'light' ? 'dark' : 'light';
+          localStorage.setItem('theme', lastMode);
+          return lastMode;
+        });
       },
     }),
     []
@@ -25,11 +32,11 @@ export default function ToggleColorMode({ children }: Props) {
     fontSize: '36px',
     fontWeight: 700,
     lineHeight: '38px',
-    letterSpacing: '-1.28px',
+    letterSpacing: '1.28px',
     [theme.breakpoints.up('md')]: {
       fontSize: '48px',
       lineHeight: '52px',
-      letterSpacing: '-1.92px',
+      letterSpacing: '1.92px',
     },
     marginBottom: '40px',
   };

@@ -1,0 +1,20 @@
+.buttonUp{
+    right: 30px;
+  bottom: 47px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    to top,
+    rgba(79, 46, 232, 1),
+    rgba(220, 220, 220, 1)
+  );
+  opacity: 1;
+  transition: box-shadow 300ms ease-in-out,
+    opacity 300ms ease-in-out;
+}
+
+.buttonUp:hover,
+buttonUp:focus{
+     box-shadow: 0px 0px 0px 6px rgba(79, 46, 232, 0.3);
+}

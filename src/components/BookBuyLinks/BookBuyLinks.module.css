@@ -1,0 +1,33 @@
+.buyLinksList {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    border-radius: 5px;
+}
+
+
+
+.amazon {
+    width: 62px;
+    height: 19px;
+}
+
+.ibooks {
+    width: 32px;
+    height: 32px;
+}
+
+.bookShop {
+    width: 36px;
+    height: 36px;
+}
+
+.itemLink{
+    transform: scale(1);
+     transition: transform 0.3s ease-in-out;
+}
+
+.itemLink:hover{
+    transform: scale(1.1);
+    
+}

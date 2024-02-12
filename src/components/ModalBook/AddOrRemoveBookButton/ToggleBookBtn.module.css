@@ -1,0 +1,21 @@
+.toggleBookBtn{
+    border-radius: 40px;
+border: 2px solid var(--accent-color);
+    padding: 14px 18px;
+    transition: background-color 0.3s ease-in-out,color 0.5s ease-in-out;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (min-width:768px) and (max-width:1280px) {
+    .toggleBookBtn{
+    padding: 10px 20px;
+    
+}
+}
+
+.toggleBookBtn:hover,
+.toggleBookBtn:focus{
+    background-color: var(--accent-color);
+}
