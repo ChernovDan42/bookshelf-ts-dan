@@ -8,7 +8,7 @@ finding and buying your next read has never been easier. Explore new worlds and
 characters with just a few clicks. Join us and start your literary journey
 today!
 
-## Технології, які використовувались
+## Technologies used
 
 `TypeScript` `React` `Axios` `HTML/CSS` `MUI material` `Framer Motion`
 `React Router Dom`
